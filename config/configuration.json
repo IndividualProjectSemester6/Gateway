@@ -138,6 +138,54 @@
           "sequential": true
         }
       }
+    },
+    {
+      "endpoint": "/gateway/v1/api/Forums",
+      "timeout": "20s",
+      "method": "POST",
+      "backend": [
+        {
+          "url_pattern": "/forums-service/api/Forums",
+          "encoding": "json",
+          "method": "POST",
+          "headers_to_pass": [
+            "Authorization"
+          ],
+          "extra_config": {
+            "qos/circuit-breaker": {
+              "interval": 60,
+              "name": "circuit-breaker-1",
+              "timeout": 10,
+              "max_errors": 15,
+              "log_status_change": true
+            },
+            "auth/client-credentials": {
+              "client_id": "kinoroom",
+              "token_url": "https://lemur-0.cloud-iam.com/auth/realms/kinoroom/protocol/openid-connect/token",
+              "client_secret": "M7guSeP8agIWOKAfzqOAcDO1iCA9M28F",
+              "scopes": "profile,email"
+            }
+          },
+          "disable_host_sanitize": false,
+          "host": [
+            "http://10.136.0.128:80"
+          ]
+        }
+      ],
+      "extra_config": {
+        "auth/validator": {
+          "alg": "RS256",
+          "issuer": "https://lemur-0.cloud-iam.com/auth/realms/kinoroom",
+          "jwk_url": "https://lemur-0.cloud-iam.com/auth/realms/kinoroom/protocol/openid-connect/certs/",
+          "disable_jwk_security": false,
+          "roles_key_is_nested": true,
+          "cache": true,
+          "roles_key": "realm_access.roles",
+          "roles": [
+            "Administrator"
+          ]
+        }
+      }
     }
   ]
 }
