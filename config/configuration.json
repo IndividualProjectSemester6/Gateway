@@ -38,7 +38,7 @@
   },
   "endpoints": [
     {
-      "endpoint": "/gateway/v1/api/Forums",
+      "endpoint": "/api/v1/Forums",
       "timeout": "20s",
       "method": "GET",
       "backend": [
@@ -87,7 +87,7 @@
       }
     },
     {
-      "endpoint": "/gateway/v1/api/Forums/{forumId}",
+      "endpoint": "/api/v1/Forums/{forumId}",
       "method": "GET",
       "output_encoding": "json",
       "headers_to_pass": [
@@ -140,7 +140,7 @@
       }
     },
     {
-      "endpoint": "/gateway/v1/api/Forums",
+      "endpoint": "/api/v1/Forums",
       "timeout": "20s",
       "method": "POST",
       "backend": [
@@ -188,7 +188,7 @@
       }
     },
     {
-      "endpoint": "/gateway/v1/api/Forums/{forumId}",
+      "endpoint": "/api/v1/Forums/{forumId}",
       "method": "DELETE",
       "output_encoding": "json",
       "headers_to_pass": [
@@ -240,7 +240,7 @@
       }
     },
     {
-      "endpoint": "/gateway/v1/api/Forums",
+      "endpoint": "/api/v1/Forums",
       "method": "PUT",
       "backend": [
         {
@@ -287,7 +287,7 @@
       }
     },
     {
-      "endpoint": "/gateway/v1/api/Movies",
+      "endpoint": "/api/v1/Movies",
       "timeout": "20s",
       "method": "GET",
       "backend": [
@@ -336,7 +336,7 @@
       }
     },
     {
-      "endpoint": "/gateway/v1/api/Movies/{movieId}",
+      "endpoint": "/api/v1/Movies/{movieId}",
       "method": "GET",
       "output_encoding": "json",
       "error": {
@@ -395,7 +395,7 @@
       }
     },
     {
-      "endpoint": "/gateway/v1/api/Movies",
+      "endpoint": "/api/v1/Movies",
       "timeout": "20s",
       "method": "POST",
       "backend": [
@@ -446,7 +446,7 @@
       }
     },
     {
-      "endpoint": "/gateway/v1/api/Movies/{movieId}",
+      "endpoint": "/api/v1/Movies/{movieId}",
       "method": "DELETE",
       "output_encoding": "json",
       "response": {
@@ -508,7 +508,7 @@
       }
     },
     {
-      "endpoint": "/gateway/v1/api/Movies",
+      "endpoint": "/api/v1/Movies",
       "method": "PUT",
       "backend": [
         {
@@ -555,7 +555,7 @@
       }
     },
     {
-      "endpoint": "/gateway/v1/api/Threads",
+      "endpoint": "/api/v1/Threads",
       "timeout": "20s",
       "method": "GET",
       "backend": [
@@ -604,7 +604,7 @@
       }
     },
     {
-      "endpoint": "/gateway/v1/api/Threads/{threadId}",
+      "endpoint": "/api/v1/Threads/{threadId}",
       "method": "GET",
       "output_encoding": "json",
       "error": {
@@ -664,7 +664,7 @@
       }
     },
     {
-      "endpoint": "/gateway/v1/api/Threads",
+      "endpoint": "/api/v1/Threads",
       "timeout": "20s",
       "method": "POST",
       "backend": [
@@ -716,7 +716,7 @@
       }
     },
     {
-      "endpoint": "/gateway/v1/api/Threads/{threadId}",
+      "endpoint": "/api/v1/Threads/{threadId}",
       "method": "DELETE",
       "output_encoding": "json",
       "response": {
@@ -779,7 +779,7 @@
       }
     },
     {
-      "endpoint": "/gateway/v1/api/Threads/{threadId}",
+      "endpoint": "/api/v1/Threads/{threadId}",
       "method": "PUT",
       "error": {
         "status": 404,
