@@ -67,7 +67,7 @@
           },
           "disable_host_sanitize": false,
           "host": [
-            "http://10.136.0.128:80"
+            "http://host.docker.internal:80"
           ]
         }
       ],
@@ -115,7 +115,7 @@
             }
           },
           "host": [
-            "http://10.136.0.128:80"
+            "http://host.docker.internal:80"
           ],
           "disable_host_sanitize": false
         }
@@ -168,7 +168,7 @@
           },
           "disable_host_sanitize": false,
           "host": [
-            "http://10.136.0.128:80"
+            "http://host.docker.internal:80"
           ]
         }
       ],
@@ -216,7 +216,7 @@
             }
           },
           "host": [
-            "http://10.136.0.128:80"
+            "http://host.docker.internal:80"
           ],
           "disable_host_sanitize": false
         }
@@ -267,7 +267,7 @@
           },
           "disable_host_sanitize": false,
           "host": [
-            "http://10.136.0.128:80"
+            "http://host.docker.internal:80/"
           ]
         }
       ],
